@@ -11,14 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//   return view('welcome');
+//});
+//
+//Route::get('admin/dashboard', function () {
+//    return view('admin/dashboard');
+//});
+//
+//Route::get('admin/artikel', function () {
+//    return view('admin/artikel');
+//});
+//
+//Route:: get('admin/kategori', function () {
+//    return view('admin/kategori');
+//});
 
-Route::get('admin', function () {
-    return view('admin/dashboard');
-});
+// PESANTREN
+Route::get('admin/dashboard', 'PesantrenDashboard@index');
+Route::get('admin/artikel', 'PesantrenArtikel@index');
+Route::get('admin/kategori', 'PesantrenKategori@index');
 
-Route::get('artikel', function () {
-    return view('admin/artikel');
-});
+
