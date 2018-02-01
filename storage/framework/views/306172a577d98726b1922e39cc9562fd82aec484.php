@@ -4,19 +4,19 @@
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a href="<?php echo e(url('admin')); ?>">
-                        <i class="fa fa-dashboard <?php echo e(active(['admin.dashboard'])); ?>"></i>
+                    <a href="<?php echo e(url('admin/dashboard')); ?>" class=" <?php echo e(active('admin/dashboard')); ?>">
+                        <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 
-                <li class="<?php echo e(active(['admin.artikel', 'admin/artikel/*'])); ?>" href="<?php echo e(url('artikel')); ?>">
-                    <a href="javascript:;">
+                <li href="">
+                    <a href="javascript:;" class="dcjq-parent <?php echo e(active(['admin/artikel/*', 'admin/artikel'])); ?>">
                         <i class="fa fa-book"></i>
                         <span>Artikel</span>
                     </a>
                     <ul class="sub">
-                        <li ><a class="<?php echo e(active(['admin.artikel'])); ?>" href="<?php echo e(url('artikel')); ?>">Artikel Utama</a></li>
+                        <li ><a class="<?php echo e(active('admin/artikel')); ?>" href="<?php echo e(url('admin/artikel')); ?>">Artikel Utama</a></li>
                         <li><a href="glyphicon.html">Artikel Pesantren</a></li>
                         <li><a href="grids.html">Grids</a></li>
                     </ul>

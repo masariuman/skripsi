@@ -7,13 +7,8 @@ use Illuminate\Http\Request;
 class PesantrenDashboard extends Controller
 {
     //view
-    public function dashboard() {
+    public function index() {
         return view('admin.dashboard');
-    }
-
-    //artikel
-    public function artikel() {
-        return view('admin.artikel');
     }
 
     //kategori

@@ -5,18 +5,18 @@
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
                     <a href="{{url('admin')}}">
-                        <i class="fa fa-dashboard {{ Request::is('admin') ? 'active' : 'no' }}"></i>
+                        <i class="fa fa-dashboard {{ active(['admin.dashboard']) }}"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 
-                <li class="active">
+                <li class="{{ active(['admin.artikel', 'admin/artikel/*'])}}" href="{{url('artikel')}}">
                     <a href="javascript:;">
                         <i class="fa fa-book"></i>
                         <span>Artikel</span>
                     </a>
                     <ul class="sub">
-                        <li ><a class="active" href="{{url('artikel')}}">Artikel Utama</a></li>
+                        <li ><a class="{{ active(['admin.artikel']) }}" href="{{url('artikel')}}">Artikel Utama</a></li>
                         <li><a href="glyphicon.html">Artikel Pesantren</a></li>
                         <li><a href="grids.html">Grids</a></li>
                     </ul>

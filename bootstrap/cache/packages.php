@@ -25,4 +25,15 @@
       'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
+  'watson/active' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Watson\\Active\\ActiveServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Active' => 'Watson\\Watson\\Facades\\Active',
+    ),
+  ),
 );
