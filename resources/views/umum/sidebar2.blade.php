@@ -22,9 +22,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="{{url('admin/acara')}}" class="{{ active('admin/acara') }}" >
                         <i class="fa fa-bullhorn"></i>
-                        <span>Font awesome </span>
+                        <span>Acara</span>
                     </a>
                 </li>
                 <li class="sub-menu">

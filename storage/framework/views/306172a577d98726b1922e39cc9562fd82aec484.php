@@ -22,9 +22,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="fontawesome.html">
+                    <a href="<?php echo e(url('admin/acara')); ?>" class="<?php echo e(active('admin/acara')); ?>" >
                         <i class="fa fa-bullhorn"></i>
-                        <span>Font awesome </span>
+                        <span>Acara</span>
                     </a>
                 </li>
                 <li class="sub-menu">
