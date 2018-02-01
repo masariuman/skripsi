@@ -16,8 +16,8 @@
                         <span>Artikel</span>
                     </a>
                     <ul class="sub">
-                        <li ><a class="{{ active('admin/artikel') }}" href="{{url('admin/artikel')}}">Artikel Utama</a></li>
-                        <li><a href="glyphicon.html">Artikel Pesantren</a></li>
+                        <li><a class="{{ active('admin/artikel') }}" href="{{url('admin/artikel')}}">Artikel Utama</a></li>
+                        <li><a class="{{ active('admin/kategori') }}" href="{{url('admin/kategori')}}">Kategori</a></li>
                         <li><a href="grids.html">Grids</a></li>
                     </ul>
                 </li>

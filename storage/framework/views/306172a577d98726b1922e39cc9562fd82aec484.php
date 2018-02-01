@@ -16,8 +16,8 @@
                         <span>Artikel</span>
                     </a>
                     <ul class="sub">
-                        <li ><a class="<?php echo e(active('admin/artikel')); ?>" href="<?php echo e(url('admin/artikel')); ?>">Artikel Utama</a></li>
-                        <li><a href="glyphicon.html">Artikel Pesantren</a></li>
+                        <li><a class="<?php echo e(active('admin/artikel')); ?>" href="<?php echo e(url('admin/artikel')); ?>">Artikel Utama</a></li>
+                        <li><a class="<?php echo e(active('admin/kategori')); ?>" href="<?php echo e(url('admin/kategori')); ?>">Kategori</a></li>
                         <li><a href="grids.html">Grids</a></li>
                     </ul>
                 </li>
