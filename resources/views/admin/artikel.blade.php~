@@ -1,0 +1,68 @@
+@extends('backend')
+@section('main')
+    <div class="table-agile-info">
+        <p class="bottompadding10"><button type="submit" class="btn btn-info width100persen marginbottom10">ARTIKEL BARU</button></p>        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                DAFTAR ARTIKEL
+            </div>
+        <div>
+        <table class="table" ui-jq="footable" ui-options='{
+          "paging": {
+            "enabled": true
+          },
+          "filtering": {
+            "enabled": true
+          },
+          "sorting": {
+            "enabled": true
+          }}'>
+            <thead>
+                <tr>
+                    <th data-breakpoints="xs">No</th>
+                    <th>Judul Artikel</th>
+                    <th>Isi Artikel</th>
+                    <th>Kategori</th>
+                    <th><p>Jumlah</p><p>Komentar</p></th>
+                    <th data-breakpoints="xs" data-title="DOB">Pengaturan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-expanded="true">
+                    <td>1</td>
+                    <td><p>Meja terbang</p><small><i>1 Januari 2018</i></small></td>
+                    <td>terdapat meja terbang di pontianak yang.....</td>              
+                    <td>dalam negeri</td>
+                    <td>2</td>
+                    <td>
+                        <a href="#myModal" data-toggle="modal" class="btn btn-success">
+                            LIHAT
+                        </a> 
+                        <a href="#myModal" data-toggle="modal" class="btn btn-warning">
+                            UBAH
+                        </a> 
+                        <a href="#myModal" data-toggle="modal" class="btn btn-danger">
+                            HAPUS
+                        </a>
+                    <td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Elodia</td>
+                    <td>Weisz</td>
+                    <td>Wallpaperer Helper</td>              
+                    <td>March 30th 1982</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Raeann</td>
+                    <td>Haner</td>
+                    <td>Internal Medicine Nurse Practitioner</td>               
+                    <td>February 26th 1966</td>
+                </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+@stop
