@@ -19,22 +19,25 @@
             <thead>
                 <tr>
                     <th data-breakpoints="xs" class="textaligncenter">No</th>
-                    <th class="textaligncenter">Nama Kategori</th>
-                    <th class="textaligncenter">Deskripsi Kategori</th>
+                    <th class="textaligncenter">Judul Artikel</th>
+                    <th class="textaligncenter">Nama</th>
+                    <th class="textaligncenter"><p>Isi</p>Komentar</th>
+                    <th class="textaligncenter"><p>Tanggal</p><p>Komentar</p></th>
+                    <th class="textaligncenter">Status</th>
                     <th class="textaligncenter" style="width:155px;">Pengaturan</th>
                 </tr>
             </thead>
             <tbody>
                 <tr data-expanded="true">
                     <td class="textaligncenter">1</td>
-                    <td class="textaligncenter"><p>Kesehatan</p></td>
-                    <td>kategori tentang kesehatan</td>
+                    <td class="textaligncenter"><p>Piring Terbang</p></td>
+                    <td>Arif Setiawan</td>
+                    <td>webnya ok</td>
+                    <td class="textaligncenter"><p>2017-12-02</p><small>13:51:02</small></td>
+                    <td class="textaligncenter">belum dibaca</td>
                     <td class="textaligncenter">
                         <a href="#myModal" data-toggle="modal" class="btn btn-success" title="LIHAT">
                             <i class="fa fa-eye"></i>
-                        </a> 
-                        <a href="#myModal" data-toggle="modal" class="btn btn-warning" title="EDIT">
-                            <i class="fa fa-pencil"></i>
                         </a> 
                         <a href="#myModal" data-toggle="modal" class="btn btn-danger" title="HAPUS">
                             <i class="fa fa-trash-o"></i>

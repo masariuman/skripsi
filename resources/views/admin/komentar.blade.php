@@ -22,8 +22,8 @@
                     <th data-breakpoints="xs" class="textaligncenter">No</th>
                     <th class="textaligncenter">Judul Artikel</th>
                     <th class="textaligncenter">Nama</th>
-                    <th class="textaligncenter">Isi Komentar</th>
-                    <th class="textaligncenter">Tanggal Komentar</th>
+                    <th class="textaligncenter"><p>Isi</p>Komentar</th>
+                    <th class="textaligncenter"><p>Tanggal</p><p>Komentar</p></th>
                     <th class="textaligncenter">Status</th>
                     <th class="textaligncenter" style="width:155px;">Pengaturan</th>
                 </tr>
@@ -34,8 +34,8 @@
                     <td class="textaligncenter"><p>Piring Terbang</p></td>
                     <td>Arif Setiawan</td>
                     <td>webnya ok</td>
-                    <td><p>2017-12-02</p><small>13:51:02</small></td>
-                    <td>belum dibaca</td>
+                    <td class="textaligncenter"><p>2017-12-02</p><small>13:51:02</small></td>
+                    <td class="textaligncenter">belum dibaca</td>
                     <td class="textaligncenter">
                         <a href="#myModal" data-toggle="modal" class="btn btn-success" title="LIHAT">
                             <i class="fa fa-eye"></i>
