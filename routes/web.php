@@ -30,6 +30,6 @@
 // PESANTREN
 Route::get('admin/dashboard', 'PesantrenDashboard@index');
 Route::get('admin/artikel', 'PesantrenArtikel@index');
-Route::get('admin/kategori', 'PesantrenKategori@index');
-
+Route::get('admin/artikel/kategori', 'PesantrenKategori@index');
+Route::get('admin/artikel/komentar', 'PesantrenKomentar@index');
 

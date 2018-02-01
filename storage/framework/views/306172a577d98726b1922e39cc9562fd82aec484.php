@@ -17,8 +17,8 @@
                     </a>
                     <ul class="sub">
                         <li><a class="<?php echo e(active('admin/artikel')); ?>" href="<?php echo e(url('admin/artikel')); ?>">Artikel Utama</a></li>
-                        <li><a class="<?php echo e(active('admin/kategori')); ?>" href="<?php echo e(url('admin/kategori')); ?>">Kategori</a></li>
-                        <li><a href="grids.html">Grids</a></li>
+                        <li><a class="<?php echo e(active('admin/artikel/kategori')); ?>" href="<?php echo e(url('admin/artikel/kategori')); ?>">Kategori</a></li>
+                        <li><a class="<?php echo e(active('admin/artikel/komentar')); ?>" href="<?php echo e(url('admin/artikel/komentar')); ?>">Komentar</a></li>
                     </ul>
                 </li>
                 <li>
