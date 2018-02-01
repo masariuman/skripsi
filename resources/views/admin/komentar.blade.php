@@ -1,10 +1,9 @@
 @extends('backend')
 @section('main')
     <div class="table-agile-info">
-        <p class="bottompadding10"><button type="submit" class="btn btn-info width100persen marginbottom10">KATEGORI BARU</button></p>        
         <div class="panel panel-default">
             <div class="panel-heading">
-                DAFTAR KATEGORI
+                DAFTAR KOMENTAR
             </div>
         <div>
         <table class="table" ui-jq="footable" ui-options='{
