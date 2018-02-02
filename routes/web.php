@@ -33,3 +33,4 @@ Route::get('admin/artikel', 'PesantrenArtikel@index');
 Route::get('admin/artikel/kategori', 'PesantrenKategori@index');
 Route::get('admin/artikel/komentar', 'PesantrenKomentar@index');
 Route::get('admin/acara', 'PesantrenAcara@index');
+Route::get('admin/profil', 'PesantrenProfil@index');

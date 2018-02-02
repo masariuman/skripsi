@@ -28,30 +28,18 @@
                     </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="<?php echo e(active(['admin/profil/*', 'admin/profil'])); ?>">
                         <i class="fa fa-th"></i>
-                        <span>Data Tables</span>
+                        <span>Pesantren</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-tasks"></i>
-                        <span>Form Components</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="form_component.html">Form Elements</a></li>
-                        <li><a href="form_validation.html">Form Validation</a></li>
-                        <li><a href="dropzone.html">Dropzone</a></li>
+                        <li><a href="<?php echo e(url('admin/profil')); ?>" class="<?php echo e(active('admin/profil')); ?>" >Tambah Profil</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-envelope"></i>
-                        <span>Mail </span>
+                        <span>Kontak</span>
                     </a>
                     <ul class="sub">
                         <li><a href="mail.html">Inbox</a></li>
