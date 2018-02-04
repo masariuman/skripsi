@@ -16,7 +16,7 @@
                         <span>Artikel</span>
                     </a>
                     <ul class="sub">
-                        <li><a class="{{ active('admin/artikel') }}" href="{{url('admin/artikel')}}">Artikel Utama</a></li>
+                        <li><a class="{{ active('admin_utama/artikel') }}" href="{{url('admin_utama/artikel')}}">Artikel Utama</a></li>
                         <li><a class="{{ active('admin/artikel/kategori') }}" href="{{url('admin/artikel/kategori')}}">Kategori</a></li>
                         <li><a class="{{ active('admin/artikel/komentar') }}" href="{{url('admin/artikel/komentar')}}">Komentar</a></li>
                     </ul>
