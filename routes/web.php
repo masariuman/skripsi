@@ -35,4 +35,5 @@ Route::get('admin/artikel/komentar', 'PesantrenKomentar@index');
 Route::get('admin/acara', 'PesantrenAcara@index');
 Route::get('admin/profil', 'PesantrenProfil@index');
 Route::get('admin/kontak', 'PesantrenKontak@index');
-Route::get('admin/kogout', 'PesantrenSession@logout');
+Route::get('admin/pengaturan', 'PesantrenPengaturan@index');
+Route::get('admin/logout', 'PesantrenSession@logout');
