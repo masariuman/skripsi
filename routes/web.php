@@ -27,6 +27,12 @@
 //    return view('admin/kategori');
 //});
 
+//auth
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
 // PESANTREN
 Route::get('admin/dashboard', 'PesantrenDashboard@index');
 Route::get('admin/artikel', 'PesantrenArtikel@index');
@@ -37,3 +43,5 @@ Route::get('admin/profil', 'PesantrenProfil@index');
 Route::get('admin/kontak', 'PesantrenKontak@index');
 Route::get('admin/pengaturan', 'PesantrenPengaturan@index');
 Route::get('admin/logout', 'PesantrenSession@logout');
+
+
