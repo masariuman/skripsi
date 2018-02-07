@@ -22,12 +22,20 @@ class CreateTableArtikelPesantren extends Migration
             $table->string('gambar')->nullable();
             $table->string('nama_gambar')->nullable();
             $table->string('status', 20);
+            $table->enum('level',['admin','operator']);
+            $table->string('id_users');
             $table->timestamps();
 
             $table->foreign('id_kategori')
                     ->references('id')
                     ->on('kategori')
                     ->onDelete('set null')
+                    ->onUpdate('cascade');
+
+            $table->foreign('id_users')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('cascade')
                     ->onUpdate('cascade');
         });
     }
@@ -42,7 +50,11 @@ class CreateTableArtikelPesantren extends Migration
         Schema::table('artikel', function (Blueprint $table) {
             $table->dropForeign('artikel_id_kategori_foreign');
         });
-        
+
+        Schema::table('artikel', function (Blueprint $table) {
+            $table->dropForeign('artikel_id_users_foreign');
+        });
+
         Schema::dropIfExists('artikel');
     }
 }
