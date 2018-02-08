@@ -60,6 +60,28 @@
                 </li>
                 @endif
 
+
+                {{-- SIDEBAR ADMIN --}}
+                @if (Auth::check() && Auth::user()->level =='admin')
+                <li>
+                    <a href="{{url('admin/user')}}" class="{{ active('admin/user') }}" >
+                        <i class="fa fa-users"></i>
+                        <span>User</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url('admin/pengaturan')}}" class="{{ active('admin/pengaturan') }}" >
+                        <i class="fa fa-cog"></i>
+                        <span>Pengaturan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url('admin/logout')}}" class="{{ active('admin/logout') }}" >
+                        <i class="fa fa-sign-out"></i>
+                        <span>Keluar</span>
+                    </a>
+                </li>
+                @endif
             </ul>   
         </div>
         <!-- sidebar menu end-->

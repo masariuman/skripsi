@@ -60,6 +60,28 @@
                 </li>
                 <?php endif; ?>
 
+
+                
+                <?php if(Auth::check() && Auth::user()->level =='admin'): ?>
+                <li>
+                    <a href="<?php echo e(url('admin/user')); ?>" class="<?php echo e(active('admin/user')); ?>" >
+                        <i class="fa fa-users"></i>
+                        <span>User</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo e(url('admin/pengaturan')); ?>" class="<?php echo e(active('admin/pengaturan')); ?>" >
+                        <i class="fa fa-cog"></i>
+                        <span>Pengaturan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo e(url('admin/logout')); ?>" class="<?php echo e(active('admin/logout')); ?>" >
+                        <i class="fa fa-sign-out"></i>
+                        <span>Keluar</span>
+                    </a>
+                </li>
+                <?php endif; ?>
             </ul>   
         </div>
         <!-- sidebar menu end-->
