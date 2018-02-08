@@ -10,6 +10,10 @@
                     </a>
                 </li>
                 
+
+
+                {{-- SIDEBAR OPERATOR --}}
+                @if (Auth::check() && Auth::user()->level =='operator')
                 <li href="">
                     <a href="javascript:;" class="dcjq-parent {{ active(['admin/artikel/*', 'admin/artikel'])}}">
                         <i class="fa fa-book"></i>
@@ -54,6 +58,8 @@
                         <span>Keluar</span>
                     </a>
                 </li>
+                @endif
+
             </ul>   
         </div>
         <!-- sidebar menu end-->
