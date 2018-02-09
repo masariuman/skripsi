@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! test commit 2
                 </div>
             </div>
         </div>
