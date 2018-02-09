@@ -1,8 +1,7 @@
-@extends('backend')
-@section('main')
+<?php $__env->startSection('main'); ?>
     <div class="table-agile-info">
         <p class="bottompadding10">
-            <a href="{{ url('admin/user/tambah_baru') }}">
+            <a href="<?php echo e(url('admin/user/tambah_baru')); ?>">
                 <button type="submit" class="btn btn-info width100persen marginbottom10">USER BARU</button>
             </a>
         </p>        
@@ -53,4 +52,6 @@
       </div>
     </div>
   </div>
-@stop
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('backend', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

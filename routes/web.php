@@ -33,9 +33,23 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// ADMIN test
+// ADMIN user
 Route::get('admin/user', 'AdminUser@index');
 Route::get('admin/user/tambah_baru', 'AdminUser@create');
+//search
+Route::post('admin/user/search', 'ArtikelController@search');
+//simpan data artikel
+Route::post('admin/user', 'ArtikelController@store');
+//edit kategori;;
+Route::get('admin/user/{kategori}/edit', 'ArtikelController@edit');
+Route::patch('admin/user/{kategori}', 'ArtikelController@update');
+//hapus
+Route::post('/admin/user/delete/{id}', 'ArtikelController@destroy');
+//show
+//Route::get('artikel/{kategori}', 'ArtikelController@show');
+//show komen on artikel
+//Route::get('artikel/komentar/{artikel}/{kategori}', 'ArtikelController@show_komentar_artikel');
+
 
 // PESANTREN
 Route::get('admin/dashboard', 'PesantrenDashboard@index');
