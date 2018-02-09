@@ -35,6 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ADMIN
 Route::get('admin/user', 'AdminUser@index');
+Route::get('admin/user/tambah_baru', 'AdminUser@create');
 
 // PESANTREN
 Route::get('admin/dashboard', 'PesantrenDashboard@index');
