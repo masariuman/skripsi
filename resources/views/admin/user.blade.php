@@ -29,8 +29,8 @@
             <tbody>
                 <tr data-expanded="true">
                     <td class="textaligncenter">1</td>
-                    <td>MasariuMan</td>
-                    <td>masariuman@gmail.com</td>              
+                    <td class="textaligncenter">MasariuMan</td>
+                    <td class="textaligncenter">masariuman@gmail.com</td>              
                     <td class="textaligncenter">admin</td>
                     <td class="textaligncenter">
                         <a href="#myModal" data-toggle="modal" class="btn btn-success" title="LIHAT">

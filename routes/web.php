@@ -34,7 +34,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
 
 // ADMIN
-Route::get('admin/users', 'AdminUser@index');
+Route::get('admin/user', 'AdminUser@index');
 
 // PESANTREN
 Route::get('admin/dashboard', 'PesantrenDashboard@index');
