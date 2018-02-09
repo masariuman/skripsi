@@ -1,7 +1,11 @@
 @extends('backend')
 @section('main')
     <div class="table-agile-info">
-        <p class="bottompadding10"><button type="submit" class="btn btn-info width100persen marginbottom10">USER BARU</button></p>        
+        <p class="bottompadding10">
+            <a href="{{ url('admin/user/tambah_baru') }}">
+                <button type="submit" class="btn btn-info width100persen marginbottom10">USER BARU</button>
+            </a>
+        </p>        
         <div class="panel panel-default">
             <div class="panel-heading">
                 DAFTAR USER
