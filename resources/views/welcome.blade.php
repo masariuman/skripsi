@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel >> NGETeST SUBLIME AUTOCOMMIT AT ALL.
                 </div>
 
                 <div class="links">
